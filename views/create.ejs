@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="main w-full min-h-screen bg-zinc-900 p-7 text-white">
+
+        <!-- Nav bar -->
+        <div class="nav flex justify-between text-lg">
+            <h1 class="font-bold">Khaatabook</h1>
+            <div class="sub-nav flex item-end">
+                <a class="pr-16" href="/">Home</a>
+                <a href="">Create New Hisaab</a>
+            </div>
+        </div>
+        <!-- Nav bar -->
+
+        <form action="/create" method="post">
+            <h1 class="pt-20 text-lg">Create New Hisaab</h1>
+            <textarea class="block mt-5 resize-none h-72 w-1/2 bg-zinc-800 border-[1px] border-zinc-500 rounded-md p-5" placeholder="Apna Hisaab Likhen" name="data"></textarea>
+            <input class="px-7 py-2 bg-blue-600 text-lg rounded-md mt-4" type="submit" value="Create Hisaab">
+        </form>
+
+    </div>
+</body>
+</html>
